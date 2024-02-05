@@ -1,0 +1,33 @@
+.btn-outline{
+
+    background-color: #476888;
+    color: #eeeeee;
+}
+.text-navlink{
+    color: #fcfcfc;
+    text-decoration: none;
+    &:hover{
+        color: #131212;
+        text-decoration: none;
+    }
+}
+.light-text{
+    color: #fcfcfc;
+    &:hover{
+        color: #131212;
+        text-decoration: none;
+    }
+}
+.navbar{
+top: 0;
+width: 100%;
+padding: 10px 0;
+text-align: center;
+background-color: #476888!important;
+border-bottom: 1px solid #e9ecef;
+font-size: 14px;
+color: #101111;
+font-weight: 500;
+
+
+}

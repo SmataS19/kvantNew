@@ -1,0 +1,32 @@
+app-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #476888;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #e9ecef;
+    font-size: 14px;
+    color: #101111;
+    font-weight: 500;
+    z-index: 1000;
+    a{
+        color: #6c757d;
+        text-decoration: none;
+        &:hover{
+            color: #6c757d;
+            text-decoration: none;
+        }
+    }
+}
+app-content{
+    padding-bottom: 50px;
+    display: block;
+    color: #101111;
+    margin-bottom: 50px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+

@@ -1,0 +1,35 @@
+@for (publish of publications; track publish.local_id) {
+    <div class="card col-2 d-inline-flex">
+      <div class="card-header">
+        <h5 class="card-title">{{publish.title}}</h5>
+        </div>
+        <div class="card-body">
+           
+            <p class="card-text"></p>
+            @if (publish.image) {
+                <div><img src="{{publish.image}}" class="card-img-top publication" alt="..."></div>
+                <div>  {{publish.description}}</div>
+
+                <div>{{publish.cost.total_cost|currency:'MXN'}}</div> 
+            }
+            <span>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                              <div class="dropdown">
+                    <button class="btn btn-secondary dropleft-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Details...
+                    </button>
+                    <ul class="dropdown-menu">
+                          
+                    </ul>
+                  </div>
+                  <button  class="btn addbtn">Add </button>
+                </div>
+                 
+                            </span>
+        </div>
+    </div>
+    }
+   @empty {
+    Sorry there are no publications to show
+  
+  }
