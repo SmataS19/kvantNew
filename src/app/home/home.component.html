@@ -1,8 +1,8 @@
 <div class="d-inline-flex flex-wrap  col-12">
 
-  <div class="col-12"><app-navbar></app-navbar></div>
+  <div class="col-12"><app-navbar (changeComponent)="onChangeComponent($event)"></app-navbar></div>
 
-  <div class="col-12"><app-content></app-content></div>
+  <div class="col-12"><app-content [change_to_form]="true"></app-content></div>
   <app-footer></app-footer>
 
 

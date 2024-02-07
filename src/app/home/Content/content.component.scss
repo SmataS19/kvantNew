@@ -1,13 +1,5 @@
 
-.publication{
-    max-width:  10rem;
-    max-height: 10rem;
-    margin: 0 auto;
-    padding: 0.5rem;
-    align-items: center!important;
-    justify-self: center!important;
-    overflow: hidden;
-}
+
 
 
 
@@ -20,4 +12,9 @@
     background-color: #0c2844;
     color: #eeeeee;
     text-align: center;
+}
+.card{
+    height: 15rem!important;
+    text-overflow: clip;
+    
 }

@@ -10,6 +10,8 @@ import { HomeModule } from './home.module';
 })
 
 export class HomeComponent {
+
+  flag_changeComponent: Boolean=false;
   products = [
     {
       name: 'Producto 1',
@@ -25,4 +27,9 @@ export class HomeComponent {
     },
     // Agrega más productos aquí
   ];
+
+  onChangeComponent(event: any){
+    this.flag_changeComponent=event;
+
+  }
 }
