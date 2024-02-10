@@ -7,10 +7,12 @@
            
             <p class="card-text"></p>
             @if (publish.image) {
+              <div class="publication_container">
                 <div><img src="{{publish.image}}" class="card-img-top publication" alt="..."></div>
                 <div>  {{publish.description}}</div>
 
-                <div>{{publish.cost.total_cost|currency:'MXN'}}</div> 
+                <div class="justify-content-end">{{publish.cost.total_cost|currency:'MXN'}}</div> 
+              </div>
             }
             <span>
               <div class="btn-group" role="group" aria-label="Basic example">
