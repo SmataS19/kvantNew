@@ -1,18 +1,10 @@
 
-.publication{
-    width: auto;
-    height: 18rem;
-    margin: 0 auto;
-    padding: 0.5rem;
-    align-items: center!important;
-    justify-self: center!important;
-    overflow: hidden;
-}
+
 
 
 
 .addbtn{
-    background-color: #476888;
+    background-color: #478866;
     color: #eeeeee;
   
 }
@@ -20,4 +12,9 @@
     background-color: #0c2844;
     color: #eeeeee;
     text-align: center;
+}
+.card{
+    height: 15rem!important;
+    text-overflow: clip;
+    
 }

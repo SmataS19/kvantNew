@@ -7,6 +7,7 @@ import { NavbarComponent } from './Navbar/navbar.component';
 import { FooterComponent } from './Footer/footer.component';
 import { ContentComponent } from './Content/content.component';
 import { ProvisionalDatabaseService } from '../interfaces/provisional_database.service';
+import { PublishFormComponent } from './publish-form.component';
 
 
 
@@ -15,7 +16,7 @@ import { ProvisionalDatabaseService } from '../interfaces/provisional_database.s
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule, PublishFormComponent
   ],
   providers: [ProvisionalDatabaseService],
   exports: [NavbarComponent, FooterComponent, ContentComponent ]

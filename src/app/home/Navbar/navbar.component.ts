@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  // Aquí puedes agregar la lógica de tu componente
+  @Output() changeComponent: EventEmitter<boolean> = new EventEmitter<boolean>();
+  flag=false;
+  // Método para cambiar el componente dinámico
+  changeDynamicComponent(clicked: boolean) {
+    this.changeComponent.emit(clicked);
+    this.flag=true;
+  }
 }
